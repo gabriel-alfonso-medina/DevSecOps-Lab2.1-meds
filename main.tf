@@ -1,4 +1,10 @@
 terraform {
+  cloud {
+    organization = "meds_cloud_ph"
+    workspaces {
+      name = "fecp-cycle4-meds"
+    }
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
